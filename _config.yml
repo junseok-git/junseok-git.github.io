@@ -20,7 +20,7 @@ title                    : "Junseok's Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Junseok Kim"
-description              : "Thankyou for Visiting :D"\n"Homepage : https://sites.google.com/view/junseokkim/"
+description              : "Thankyou for Visiting :D"
 url                      : "https://junseok-git.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
