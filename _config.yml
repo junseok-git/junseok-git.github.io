@@ -96,8 +96,8 @@ analytics:
 author:
   name             : "Junseok Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Thankyou for Visiting :D"\n"Homepage : https://sites.google.com/view/junseokkim/"
+  location         : "University in Seoul"
   email            :
   links:
     - label: "Email"
