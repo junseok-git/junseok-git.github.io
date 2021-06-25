@@ -1,6 +1,4 @@
-# 서울시립대 교통공학과 16학번 김준석 (2021년 1학기)
-
-분석결과 및 의견은 함께 첨부한 발표자료(pdf)에 담았습니다.
+# Traffic Flow Theory (Spring 2021) Project's Python Code
 
 # 교차로 현시 분석 (경찰청측 API 서버 오류로 일부 교차로만 가능)
 
