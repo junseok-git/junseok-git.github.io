@@ -7,11 +7,11 @@ categories: codes
 
 ___
 
-# 1. 대중교통 만족도 척도22
+# 1. 대중교통 만족도 척도
 
 ## 1.1 트위터 크롤링
 
-```
+```{r}
 # 트위터 분석 패키지
 install.packages(c("twitteR", "ROAuth", "base64enc"))
 library("twitteR")
@@ -43,7 +43,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 1.2 감성분석
 
-```
+```{r}
 positive <- readLines("positive.txt", encoding = "UTF-8")
 positive=positive[-1]
 
@@ -93,11 +93,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ___
 
+
+
 # 2. 토지가격 구하기
 
 ## 2.1 토지가격 데이터 전처리
 
-```
+```{r}
 
 ########## 토지가격 구하기 ##########
 install.packages("data.tabel")     # 대용량 파일 읽기용
@@ -136,7 +138,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 2.2 구별 평균토지가격 계산
 
-```
+```{r}
 ad<-data.frame(do.call('rbind',strsplit(as.character(land_price2$주소),split=' ',fixed=TRUE)))   #주소 띄어쓰기로 분할
 land_ad<-cbind(ad,land_price2)
 land_ad<-land_ad[,-c(1,3:6)]
@@ -148,9 +150,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ___
 
+
+
 # 3. 구별 평당 평균 주택가격 계산
 
-```
+```{r}
 ############ 구별 평당 평균 주택가격 #############
 install.packages("data.tabel")
 library(data.table)
@@ -170,12 +174,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ___
 
+
+
 # 4. 공시지가 예측 분석 (LSTM)
 
 ## 4.1 토지가격, 주택가격 정규화
 
-```
-
+```{r}
 ### 공시지가 예측 분석 ###
 
 land<-read.csv("E:/Google 드라이브/학교 공부용/2학년/빅데이터/텀프로젝트/result/연도별 구별 평균토지가격 정리.csv")
@@ -189,15 +194,12 @@ normalize <- function(x){
 
 # 전체 데이터 프레임에 정규화 적용
 land_n <- as.data.frame(lapply(land[,2:26],normalize))
-
 knitr::opts_chunk$set(echo = TRUE)
-
 ```
 
 ## 4.2 LSTM 실행
 
-```
-
+```{r}
 ######## LSTM #########
 
 library(keras)
@@ -262,9 +264,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ___
 
+
+
 # 5. 클러스터별 결론
 
-```
+```{r}
 
 ############## Clustring #############
 
