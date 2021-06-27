@@ -589,7 +589,7 @@ folium.Marker([A_09['lat'][0], A_09['lng'][0]], popup=A_09['spot_nm'][0]).add_to
 m
 ```
 
-![image-20210625205708893](image/2021-06-15-Traffic-Flow-Theory/image-20210625205708893.png)
+![image-20210625205708893](assets/images/2021-06-15-Traffic-Flow-Theory/image-20210625205708893.png)
 
 
 
@@ -1594,11 +1594,11 @@ for i in range(len(Dl)):
 
 
 
-![png](output_30_1.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_30_1.png)
 
 
 
-![png](output_30_2.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_30_2.png)
 
 
 ___
@@ -1771,99 +1771,99 @@ for i in range(len(Dl)):
 
 
 
-![png](output_35_1.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_1.png.png)
 
 
 
-![png](output_35_2.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_2.png)
 
 
 
-![png](output_35_3.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_3.png)
 
 
 
-![png](output_35_4.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_4.png)
 
 
 
-![png](output_35_5.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_5.png)
 
 
 
-![png](output_35_6.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_6.png)
 
 
 
-![png](output_35_7.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_7.png)
 
 
 
-![png](output_35_8.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_8.png)
 
 
 
-![png](output_35_9.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_9.png)
 
 
 
-![png](output_35_10.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_10.png)
 
 
 
-![png](output_35_11.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_11.png)
 
 
 
-![png](output_35_12.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_12.png)
 
 
 
-![png](output_35_13.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_13.png)
 
 
 
-![png](output_35_14.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_14.png)
 
 
 
-![png](output_35_15.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_15.png)
 
 
 
-![png](output_35_16.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_16.png)
 
 
 
-![png](output_35_17.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_17.png)
 
 
 
-![png](output_35_18.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_18.png)
 
 
 
-![png](output_35_19.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_19.png)
 
 
 
-![png](output_35_20.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_20.png)
 
 
 
-![png](output_35_21.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_21.png)
 
 
 
-![png](output_35_22.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_22.png)
 
 
 
-![png](output_35_23.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_23.png)
 
 
 
-![png](output_35_24.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_24.png)
 
 
 
@@ -1935,51 +1935,51 @@ for i in range(len(Dl)):
 ```
 
 
-![png](output_37_0.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_0.png)
 
 
 
-![png](output_37_1.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_1.png)
 
 
 
-![png](output_37_2.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_2.png)
 
 
 
-![png](output_37_3.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_3.png)
 
 
 
-![png](output_37_4.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_4.png)
 
 
 
-![png](output_37_5.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_5.png)
 
 
 
-![png](output_37_6.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_6.png)
 
 
 
-![png](output_37_7.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_7.png)
 
 
 
-![png](output_37_8.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_8.png)
 
 
 
-![png](output_37_9.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_9.png)
 
 
 
-![png](output_37_10.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_10.png)
 
 
 
-![png](output_37_11.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_11.png)
 
 
 
@@ -2033,11 +2033,11 @@ plt.show()
 ```
 
 
-![png](output_38_0.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_38_0.png)
 
 
 
-![png](output_38_1.png)
+![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_38_1.png)
 
 
 
