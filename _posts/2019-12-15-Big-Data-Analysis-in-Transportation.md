@@ -7,12 +7,11 @@ categories: codes
 
 ___
 
-# 1. 대중교통 만족도 척도
+# 1. 대중교통 만족도 척도22
 
 ## 1.1 트위터 크롤링
 
-```{r setup, include=FALSE}
-
+```
 # 트위터 분석 패키지
 install.packages(c("twitteR", "ROAuth", "base64enc"))
 library("twitteR")
@@ -40,13 +39,11 @@ write.table(text, "b2.txt", row.names = F)
 
 b2.txt<-readLines("b2.txt")
 knitr::opts_chunk$set(echo = TRUE)
-
 ```
 
 ## 1.2 감성분석
 
-```{r setup, include=FALSE}
-
+```
 positive <- readLines("positive.txt", encoding = "UTF-8")
 positive=positive[-1]
 
@@ -100,7 +97,7 @@ ___
 
 ## 2.1 토지가격 데이터 전처리
 
-```{r setup, include=FALSE}
+```
 
 ########## 토지가격 구하기 ##########
 install.packages("data.tabel")     # 대용량 파일 읽기용
@@ -139,7 +136,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 2.2 구별 평균토지가격 계산
 
-```{r setup, include=FALSE}
+```
 ad<-data.frame(do.call('rbind',strsplit(as.character(land_price2$주소),split=' ',fixed=TRUE)))   #주소 띄어쓰기로 분할
 land_ad<-cbind(ad,land_price2)
 land_ad<-land_ad[,-c(1,3:6)]
@@ -153,8 +150,7 @@ ___
 
 # 3. 구별 평당 평균 주택가격 계산
 
-```{r setup, include=FALSE}
-
+```
 ############ 구별 평당 평균 주택가격 #############
 install.packages("data.tabel")
 library(data.table)
@@ -178,7 +174,7 @@ ___
 
 ## 4.1 토지가격, 주택가격 정규화
 
-```{r setup, include=FALSE}
+```
 
 ### 공시지가 예측 분석 ###
 
@@ -200,7 +196,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 4.2 LSTM 실행
 
-```{r setup, include=FALSE}
+```
 
 ######## LSTM #########
 
@@ -268,7 +264,7 @@ ___
 
 # 5. 클러스터별 결론
 
-```{r setup, include=FALSE}
+```
 
 ############## Clustring #############
 
