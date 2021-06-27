@@ -3,7 +3,7 @@ Title: Traffic Flow Theory
 Publish Date: 2021-06-15 10:00:00
 published: true
 categories: codes
-typora-copy-images-to: ..\images\2021-06-15-Traffic-Flow-Theory
+typora-copy-images-to: ..assets\images\2021-06-15-Traffic-Flow-Theory
 ---
 
 
