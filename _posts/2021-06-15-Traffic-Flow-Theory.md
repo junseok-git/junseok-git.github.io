@@ -1594,7 +1594,7 @@ for i in range(len(Dl)):
 
 
 
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_30_1.png)
+![png](https://github.com/junseok-git/junseok-git.github.io/blob/6691c5b4fccef22c4c5c3a82dbdf6a8ddca43b43/assets/images/2021-06-15-Traffic-Flow-Theory/output_30_1.png)
 
 
 
