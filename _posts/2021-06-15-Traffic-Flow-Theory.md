@@ -589,7 +589,7 @@ folium.Marker([A_09['lat'][0], A_09['lng'][0]], popup=A_09['spot_nm'][0]).add_to
 m
 ```
 
-![image-20210625205708893](assets/images/2021-06-15-Traffic-Flow-Theory/image-20210625205708893.png)
+![image-20210625205708893](https://github.com/junseok-git/junseok-git.github.io/blob/4c0306f3c949e378757f946dce1148a35c95d4a7/assets/images/2021-06-15-Traffic-Flow-Theory/image-20210625205708893.png)
 
 
 
@@ -1598,7 +1598,7 @@ for i in range(len(Dl)):
 
 
 
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_30_2.png)
+![png](junseok-git.github.io/assets/images/2021-06-15-Traffic-Flow-Theory/output_30_2.png)
 
 
 ___
