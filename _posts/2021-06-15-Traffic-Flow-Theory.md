@@ -589,8 +589,6 @@ folium.Marker([A_09['lat'][0], A_09['lng'][0]], popup=A_09['spot_nm'][0]).add_to
 m
 ```
 
-![image-20210625205708893](https://github.com/junseok-git/junseok-git.github.io/blob/4c0306f3c949e378757f946dce1148a35c95d4a7/assets/images/2021-06-15-Traffic-Flow-Theory/image-20210625205708893.png)
-
 
 
 ___
@@ -1593,14 +1591,6 @@ for i in range(len(Dl)):
     PHF = 0.97
 
 
-
-![png](https://github.com/junseok-git/junseok-git.github.io/blob/6691c5b4fccef22c4c5c3a82dbdf6a8ddca43b43/assets/images/2021-06-15-Traffic-Flow-Theory/output_30_1.png)
-
-
-
-![png](junseok-git.github.io/assets/images/2021-06-15-Traffic-Flow-Theory/output_30_2.png)
-
-
 ___
 
 ## 4. Fundamental Diagram 작성
@@ -1771,101 +1761,6 @@ for i in range(len(Dl)):
 
 
 
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_1.png.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_2.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_3.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_4.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_5.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_6.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_7.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_8.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_9.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_10.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_11.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_12.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_13.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_14.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_15.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_16.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_17.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_18.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_19.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_20.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_21.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_22.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_23.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_35_24.png)
-
-
 
 ```python
 # 추세선 FD 함수
@@ -1935,53 +1830,6 @@ for i in range(len(Dl)):
 ```
 
 
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_0.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_1.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_2.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_3.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_4.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_5.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_6.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_7.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_8.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_9.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_10.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_37_11.png)
-
-
 
 ```python
 # Triangular Diagram
@@ -2031,13 +1879,5 @@ plt.plot(k,u_k_func(k),color="red",linestyle="solid")
 plt.show()
    
 ```
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_38_0.png)
-
-
-
-![png](assets/images/2021-06-15-Traffic-Flow-Theory/output_38_1.png)
-
 
 
