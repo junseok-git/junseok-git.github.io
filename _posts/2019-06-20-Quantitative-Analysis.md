@@ -12,7 +12,7 @@ ___
 
 ## 1.1 data reading
 
-```{r}
+```
 daily <- read.csv("E:/TermProject/seoul bike_daily_201806_3.csv", header = T)
 summary(daily)
 str(daily)
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 1.2 training / test
-```{r}
+```
 set.seed(1201)
 flag <- sample(c("tr", "te"), size = nrow(bike_1), c(8, 2), replace = T) # 8:2로 training / test set
 train <- bike_1[which(flag == "tr"), ]
@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 1.3 Preprocessing
-```{r}
+```
 boxplot(train)
 b1 <- boxplot(train$이동거리)
 out1 <- which(train$이동거리 > b1$stats[5]) # 이동거리 outlier index
@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 1.4 Correlation analysis
-```{r}
+```
 install.packages("corrplot")
 library(corrplot)
 
@@ -55,7 +55,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ## 1. 5 Simple linear regression
-```{r}
+```
 m1 <- lm(이용건수~이동거리, data = train) # y변수: , x변수: sqft_living
 summary(m1)
 
@@ -66,13 +66,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ## 1.6 Prediction 
-```{r}
+```
 pred <- predict(m1, test) # test dataset을 이용하여 예측
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 1.7 결과 plotting
-```{r}
+```
 plot(train$이용건수, m1$fitted.values, cex = 0.5, pch = 19, xlim = c(0, 60), ylim = c(0, 60), xlab = "실제 이용건수", ylab = "예측된 이용건수")
 points(test$이용건수, pred, pch = 3, cex = 0.05, col = 3)
 abline(1,1, lty = 2, col = "blue", lwd = 2)
@@ -84,14 +84,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 2.1 Multiple Linear Regression
 
-```{r}
+```
 # 다중 회귀모형 학습
 m2 <- lm(이용건수~., data = train)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 2.2 다중공선성 확인
-```{r}
+```
 library(car)
 
 # 분산 팽창 지수 계산 (VIF)
@@ -101,7 +101,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 2.3  stepwise regression
-```{r}
+```
 # AIC 값이 작을수록 적합한 모형
 
 full_m <- lm(이용건수~., data = train) # 모든 변수를 이용한 full model
@@ -120,7 +120,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 2.4 test dataset prediction
-```{r}
+```
 # test dataset의 이용건수 예측 (점)
 pre <- predict(full_m, newdata = test)
 head(pre)
@@ -145,7 +145,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 2.5 결과 plotting
-```{r}
+```
 plot(train$이용건수, m2$fitted.values, cex = 0.5, pch = 19, xlim = c(0, 60), ylim = c(0, 60), xlab = "실제 이용건수", ylab = "예측된 이용건수")
 points(test$이용건수, pre, pch = 3, cex = 0.05, col = 3)
 lines(train$이용건수, train$이용건수, lty = 2, col = "blue")
@@ -154,7 +154,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 2.6 Stepwise regression performance evaluation
-```{r}
+```
 MSE <- function(y, y_hat){ return(mean((y - y_hat)^2)) }
 MAPE <- function(y, y_hat){ return(mean(abs((y - y_hat) / y)) * 100) }
 
@@ -183,7 +183,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## 2.7 변수의 중요도 파악
-```{r}
+```
 install.packages("relaimpo")
 library(relaimpo)
 calc.relimp(forw_m, rela = T)
