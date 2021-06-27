@@ -13,6 +13,10 @@
     {% include head.html %}
     {% include head/custom.html %}
   </head>
+  
+  <!-- 웹 폰트 설정 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
