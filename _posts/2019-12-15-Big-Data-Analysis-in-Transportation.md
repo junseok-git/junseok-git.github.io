@@ -1,7 +1,6 @@
 ---
 title: "Big Data Analysis in Transportation"
 Publish Date: 2019-12-15 10:00:00
-published: true
 categories: codes
 ---
 # 교통빅데이터 과목의 프로젝트 시 작성한 코드입니다.
@@ -11,7 +10,9 @@ ___
 # 1. 대중교통 만족도 척도
 
 ## 1.1 트위터 크롤링
+
 ```{r setup, include=FALSE}
+
 # 트위터 분석 패키지
 install.packages(c("twitteR", "ROAuth", "base64enc"))
 library("twitteR")
@@ -39,9 +40,11 @@ write.table(text, "b2.txt", row.names = F)
 
 b2.txt<-readLines("b2.txt")
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 ## 1.2 감성분석
+
 ```{r setup, include=FALSE}
 
 positive <- readLines("positive.txt", encoding = "UTF-8")
@@ -94,8 +97,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ___
 
 # 2. 토지가격 구하기
+
 ## 2.1 토지가격 데이터 전처리
+
 ```{r setup, include=FALSE}
+
 ########## 토지가격 구하기 ##########
 install.packages("data.tabel")     # 대용량 파일 읽기용
 library(data.table)
@@ -126,10 +132,13 @@ land_price2<-merge(land_price,after2,by='주소')
 land_price2<-land_price2[,-c(5:7)]
 
 #----여기 까지 1990-2019 모두 있는 공시지가 뽑아내기 ----
+
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 ## 2.2 구별 평균토지가격 계산
+
 ```{r setup, include=FALSE}
 ad<-data.frame(do.call('rbind',strsplit(as.character(land_price2$주소),split=' ',fixed=TRUE)))   #주소 띄어쓰기로 분할
 land_ad<-cbind(ad,land_price2)
@@ -143,7 +152,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ___
 
 # 3. 구별 평당 평균 주택가격 계산
+
 ```{r setup, include=FALSE}
+
 ############ 구별 평당 평균 주택가격 #############
 install.packages("data.tabel")
 library(data.table)
@@ -164,8 +175,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ___
 
 # 4. 공시지가 예측 분석 (LSTM)
+
 ## 4.1 토지가격, 주택가격 정규화
+
 ```{r setup, include=FALSE}
+
 ### 공시지가 예측 분석 ###
 
 land<-read.csv("E:/Google 드라이브/학교 공부용/2학년/빅데이터/텀프로젝트/result/연도별 구별 평균토지가격 정리.csv")
@@ -179,12 +193,17 @@ normalize <- function(x){
 
 # 전체 데이터 프레임에 정규화 적용
 land_n <- as.data.frame(lapply(land[,2:26],normalize))
+
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 ## 4.2 LSTM 실행
+
 ```{r setup, include=FALSE}
+
 ######## LSTM #########
+
 library(keras)
 
 G = 25  # 구 이름 순서대로 번호. (쉽게하려고)
@@ -248,7 +267,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ___
 
 # 5. 클러스터별 결론
+
 ```{r setup, include=FALSE}
+
 ############## Clustring #############
 
 data <- read.csv("E:/Google 드라이브/학교 공부용/2학년/빅데이터/텀프로젝트/data/result.csv", fileEncoding = "euc-kr")
